@@ -6,7 +6,7 @@ const getGenres = async () => {
    const genreRequestEndpoint = '/genre/movie/list'
    const requestParams = `?api_key=${tmdbKey}`;
    const urlToFetch = `${tmdbBaseUrl}${genreRequestEndpoint}${requestParams}`;
-
+   // hellooooo 
    try {
       const response = await fetch(urlToFetch);
       if (response.ok) {
