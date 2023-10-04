@@ -106,7 +106,7 @@ function findMedianSortedArrays(nums1, nums2) {
  const median = findMedianSortedArrays(nums1, nums2);
  console.log(median); // Output: 2.0
  */
-
+/*
 const sampleArray = [1, 2, 3, 5, 8];
 const cloneArray = arr => arr.slice(0);
 console.log('Cloned array Using Slice:', cloneArray(sampleArray));
@@ -182,5 +182,24 @@ console.log('Array of unique elements: \n ',result);
 
 
 
+*/
+
+
+const arr1 = [3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
+let x = 1;
+let y = 0;
+let item;
+for (var i = 0; i < arr1.length; i++) {
+   for (var j = i; j < arr1.length; j++) {
+      if (arr1[i] == arr1[j])
+         x++;
+      if (y < x) {
+         y = x;
+         item = arr1[i];
+      }
+   }
+   x = 0;
+}
+console.log(item + " ( " + y + " times ) ");
 
 
