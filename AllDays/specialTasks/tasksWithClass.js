@@ -79,3 +79,9 @@ myNum.forEach((num) => {
 const result = instanceOfClass.getUniqueArray();
 console.log('Array of unique elements:');
 console.log(result);
+
+// const displayButton = document.getElementById("displayCloneButton");
+
+document.getElementById("cloneArrayBtn").addEventListener("click", () => {
+   arrayOps.cloneArray()
+});
