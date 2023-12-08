@@ -118,6 +118,7 @@ const personOne = {
    fName : "Ahmad",
    lName : "Muhammad",
 }
-let {fName,lName} = personOne;
+let {fName,lName, middleName: mName = "Khan"} = personOne;
 console.log(fName);
 console.log(lName);
+console.log(mName);
