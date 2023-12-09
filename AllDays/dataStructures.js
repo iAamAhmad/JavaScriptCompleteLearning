@@ -235,6 +235,7 @@ function displayLikes(names) {
 const likesDisplay = displayLikes(['Ahmad','Muhammad','Ehsan', 'Faisal']);
 console.log(likesDisplay);
 */
+/*
 function missingValue(arr) {
    if(arr.length ===0) return 1;
    let n = arr.length + 1;
@@ -247,3 +248,27 @@ function missingValue(arr) {
 }
 const valueMissing = missingValue([1,2,4,5,6]);
 console.log(valueMissing)
+*/
+/*
+function findMissingLetter(arr){
+   const alphabets = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+   let startIndex = alphabets.startIndex(arr[0]);
+   for (let i = 0; i < arr.length; i++) {
+    if(arr[i] != alphabets[startIndex + i]){
+      return alphabets[startIndex + i]
+    }  
+   }
+   return '';
+}
+*/
+function uniqueStatement(str) {
+   let unique = {};
+   for (let i = 0; i < str.length; i++) {
+      const element = str[i];
+      if (unique[element]) {
+         return false;
+      }
+      unique[element] = true;
+   }
+   return true;
+}
